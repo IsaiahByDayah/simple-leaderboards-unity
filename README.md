@@ -6,7 +6,7 @@ Version 0.0.1
 ## Dependencies:
 - [JSONObject](https://github.com/mtschoen/JSONObject) ([Asset Store](https://www.assetstore.unity3d.com/en/#!/content/710))
 
-### Usage
+## Usage
 
 
 
@@ -25,6 +25,7 @@ public class Test : MonoBehaviour {
 	void Update () {
 		if (lb == null) return;
 
+		// Submit
 		if (Input.GetKeyDown(KeyCode.S))
 		{
 			lb.SubmitScore(gameTitle, 2, "SampleUser", ScoreSubmitted);
