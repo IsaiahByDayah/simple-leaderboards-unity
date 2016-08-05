@@ -1,5 +1,5 @@
 # simple-leaderboards-unity
-Unity package for interfacing with simple-leaderboards backend
+Unity package for interfacing with a [simple-leaderboards](https://github.com/jordankid93/simple-leaderboards) backend
 
 Version 0.0.1
 
@@ -8,7 +8,13 @@ Version 0.0.1
 
 ## Usage
 
+In the unity editor, attach the SimpleLeaderboardsManager script to the object that you want handling interacting with the leaderboards. In this example I create an empty object named "Test".
+
+In the inspector, provide the SimpleLeaderboardsManager script with the base url for the server running an instance of [simple-leaderboards](https://github.com/jordankid93/simple-leaderboards).
+
 ![](https://github.com/jordankid93/simple-leaderboards-unity/blob/master/TestGameObject.png)
+
+When you want to interact with the leaderboards, use the manager's `SubmitScore` and `FetchScoresForGame` functions.
 
 ```C#
 public class Test : MonoBehaviour {
