@@ -8,7 +8,7 @@ Version 0.0.1
 
 ## Usage
 
-
+![]({{site.baseurl}}/https://github.com/jordankid93/simple-leaderboards-unity/blob/master/TestGameObject.png)
 
 ```C#
 public class Test : MonoBehaviour {
