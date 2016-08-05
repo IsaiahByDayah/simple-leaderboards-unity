@@ -16,7 +16,7 @@ public class Test : MonoBehaviour {
 	private SimpleLeaderboardsManager lb;
 
 	[SerializeField]
-	private string gameTitle;
+	private string gameTitle; // "UnityTestGame"
 
 	void Start () {
 		lb = GetComponent<SimpleLeaderboardsManager>();
@@ -31,6 +31,7 @@ public class Test : MonoBehaviour {
 			lb.SubmitScore(gameTitle, 2, "SampleUser", ScoreSubmitted);
 		}
 
+		// Retrieve
 		if (Input.GetKeyDown(KeyCode.R))
 		{
 			lb.FetchScoresForGame(gameTitle, HighScores);
