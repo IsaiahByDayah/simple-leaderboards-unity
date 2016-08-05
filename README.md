@@ -16,7 +16,7 @@ public class Test : MonoBehaviour {
 	private SimpleLeaderboardsManager lb;
 
 	[SerializeField]
-	private string gameTitle; // "UnityTestGame"
+	private string gameTitle; // "Unity Test Game"
 
 	void Start () {
 		lb = GetComponent<SimpleLeaderboardsManager>();
